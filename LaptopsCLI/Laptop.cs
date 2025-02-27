@@ -13,7 +13,7 @@ namespace LaptopsCLI
         public Manufacturer Manufacturer { get; set; }
         public string Model { get; set; }
         public string OS { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
         public int RAM { get; set; }
         public string Screen { get; set; }
         public string Storage { get; set; }
@@ -32,7 +32,7 @@ namespace LaptopsCLI
             Manufacturer = new Manufacturer(int.Parse(x[3]), x[4]);
             Model = x[5];
             OS = x[6];
-            Price = int.Parse(x[7]);
+            Price = double.Parse(x[7]);
             RAM = int.Parse(x[8]);
             Screen = x[9];
             Storage = x[10];
